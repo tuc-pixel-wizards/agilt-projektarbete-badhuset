@@ -62,4 +62,4 @@ Den ska vara grafisk och inbjudande till ett dop i poolen. Det måste finnas tyd
 
 Fritidsgården
 Fritidsgården vill ha en egen webbplats som är anpassad för målgruppen. 
-Fritidsgården tycker att kommunens hemsida är tråkig och ungdomarna använder inte den. Dom vill ha en modern hemsida som är ”cool”. Där ska man få information om fritidsgårdens öppet tider, kommande event. 
+Fritidsgården tycker att kommunens hemsida är tråkig och ungdomarna använder inte den. Dom vill ha en modern hemsida som är ”cool”. Där ska man få information om fritidsgårdens öppet tider, kommande event...
