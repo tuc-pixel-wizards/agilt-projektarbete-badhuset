@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background: #F7F9FF;
+    --background-footer: #3586ff;
+    --color: #434656;
+}
+
+/*---Style till nav-meny---*/
+.topnav {
+    overflow: hidden;
+    background-color: var(--background-footer);
+    position: relative;
+}
+
+/*---Här göms länkarna under hamburgarmenyn---*/
+.topnav #myLinks {
+    display: none;
+    text-align: center;
+}
+
+/*---Hover till länkar---*/
+.topnav #myLinks a:hover {
+    background-color: #fff;
+    color:#3586ff;
+}
+
+/*---Style till nav-länkar---*/
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.topnav .logo {
+    font-size: 20px;
+}
+
+/*---Style till icon---*/
+.topnav a.icon {
+    background-color: var(--background-footer);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .topnav .logo{
+        font-size: 22px;
+    }
+    .topnav a{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 992px) {
+  
+    .topnav a.icon{
+        display: none;
+    }
+    .topnav .logo{
+        font-size: 24px;
+    }
+    .topnav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .topnav a{
+        display: inline-block;
+        border-radius: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .topnav #myLinks{
+        display: block;
+    }
+}
