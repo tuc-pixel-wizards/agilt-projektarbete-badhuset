@@ -10,7 +10,7 @@ Kommunfullmäktige i eran kommun har tagit beslut om att ni ska utveckla en komm
 
 Kommunen har valt ut en produktägare som har kontakt med kommunfullmäktige, marknadsavdelningen och de enheter som behöver en egen webbplats. Produktägaren har också god kännedom om vilka som bor i kommunen och som kan tänkas använda hemsidan.
 
- 
+ Hej Hej Hej
 
 
 Kommunens Webbplats
