@@ -15,10 +15,16 @@ main {
     background-color: var(--background);
 }
 
+h1 {
+    text-align: center;
+    color: var(--color);
+    padding: 35px 0;
+}
+
 h2 {
     text-align: center;
     color: var(--color);
-    padding: 25px 0;
+    padding: 35px 0;
 }
 
 p, .link {
@@ -46,7 +52,48 @@ a {
     padding: 10px;
 }
 
+.column {
+    text-align: center;
+}
+
+/* priser.html */
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    color: var(--color);
+}
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {background-color: #fff;}
+
+.table {
+    overflow-x: auto;
+}
+
 @media (min-width: 600px) {
+        h1 {
+        font-size: 60px;
+        font-weight: 900;
+        color: var(--color);
+        text-align: center;
+        z-index: 2;
+        background-color: rgba(247, 249, 255, 0.3); 
+        padding: 0 15px;       
+        border-radius: 10px;
+    }
+
     .hero {
         height: 50vh;
         width: 100%;
@@ -63,21 +110,13 @@ a {
         object-fit: cover;
         position: absolute;
     }
-    
-    .hero-text {
-        font-size: 60px;
-        font-weight: 900;
-        color: var(--color);
-        text-align: center;
-        z-index: 2;
-        background-color: rgba(247, 249, 255, 0.3); 
-        padding: 0 15px;       
-        border-radius: 10px;
-    }
-    
 }
 
 @media (min-width: 992px) {
+    h1 {
+        font-size: 60px;
+    }
+
     .hero-text {
         font-size: 100px;    
     }
@@ -92,6 +131,7 @@ a {
 
     .column {
         width: 33%;
+        text-align: left;
     }
 
     .column + .column {
