@@ -46,6 +46,51 @@ a {
     padding: 10px;
 }
 
+/*section for bookingform*/
+.booking {
+    max-width: 100%;
+}
+
+/*styling the form*/
+form {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    border-style:inset ;
+    border-color: #434656;
+    text-align: center;
+}
+
+/*styling the input*/
+input[type=text] {
+    width: 98%;
+    border-radius: 5px;
+    border-color: #434656;
+    background-color: #F7F9FF;
+}
+
+/*style for the form button*/
+.form-button {
+    width: 50%;
+    background-color: #F7F9FF;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*style for the dropdown*/
+select {
+    border-radius: 5px;
+    background-color: #F7F9FF;
+}
+
+/*making some space within the form*/
+.space-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media (min-width: 600px) {
     .hero {
         height: 50vh;
@@ -75,6 +120,10 @@ a {
         border-radius: 10px;
     }
     
+    /*changing form width for this screensize*/
+    form {
+        width: 55%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -96,5 +145,10 @@ a {
 
     .column + .column {
         margin-left: 50px;
+    }
+
+    /*changing form width for this screensize*/
+    form {
+        width: 30%;
     }
 }
