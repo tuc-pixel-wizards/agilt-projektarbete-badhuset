@@ -57,9 +57,10 @@ form {
     margin: auto;
     background-color: white;
     border-radius: 5px;
-    border-style:inset ;
+    border-style: inset;
     border-color: #434656;
     text-align: center;
+    border-width: 0.5px;
 }
 
 /*styling the input*/
@@ -68,6 +69,7 @@ input[type=text] {
     border-radius: 5px;
     border-color: #434656;
     background-color: #F7F9FF;
+    border-width: 0.5px;
 }
 
 /*style for the form button*/
@@ -77,6 +79,7 @@ input[type=text] {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-width: 0.5px;
 }
 
 /*style for the dropdown*/
@@ -89,6 +92,10 @@ select {
 .space-text {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -149,6 +156,6 @@ select {
 
     /*changing form width for this screensize*/
     form {
-        width: 30%;
+        width: 25%;
     }
 }
