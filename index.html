@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap" rel="stylesheet">
-    <title>Grönviksdal Badhus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Grönviksdals Badhus - Hem</title>
 </head>
-<body>
-    <header>
 
+<body>
+
+    <header class="topnav">
+        <a href="index.html" class="logo">Grönviksdals Badhus</a>
+        
+        <nav id="myLinks">
+          <a href="index.html">Hem</a>
+          <a href="simskola.html">Simskola</a>
+          <a href="priser.html">Priser</a>
+          <a href="oppettider.html">Öppettider</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="material-icons">menu</i>
+        </a>
     </header>
+
     <main>
         <section class="hero">
             <video class="hero-video" src="video/video(1080p).mp4" autoplay muted loop></video>
@@ -57,3 +76,14 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
