@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;900&display=swap" rel="stylesheet">
     <meta name="author" content="Pixel Wizards">
     <meta name="description" content="Simskola, babysim, vuxensimskola, vattengympa, seniorsim">
     <title>Grönviksdal Simskola</title>
 </head>
 <body>
-    <header>
-    </header>
+        <header class="topnav">
+            <a href="index.html" class="logo">Grönviksdals Badhus</a>
+            
+            <nav id="myLinks">
+              <a href="index.html">Hem</a>
+              <a href="simskola.html">Simskola</a>
+              <a href="priser.html">Priser</a>
+              <a href="oppettider.html">Öppettider</a>
+              <a href="kontakt.html">Kontakt</a>
+            </nav>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="material-icons">menu</i>
+            </a>
+        </header>
+        <main>
+            <section class="hero">
+                <video class="hero-video" src="video/video(1080p).mp4" autoplay muted loop></video>
+                <h1 class="hero-text">Grönviksdal<br>Badhus</h1>
+            </section>
     <main>
         <div class="flex container">
             <!--a section with title and paragraphs including info about different swimclasses-->
@@ -188,5 +207,15 @@
     <footer>
 
     </footer>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
 </body>
 </html>
