@@ -15,10 +15,16 @@ main {
     background-color: var(--background);
 }
 
+h1 {
+    text-align: center;
+    color: var(--color);
+    padding: 35px 0;
+}
+
 h2 {
     text-align: center;
     color: var(--color);
-    padding: 25px 0;
+    padding: 35px 0;
 }
 
 p, .link {
@@ -42,7 +48,7 @@ a {
 
 .container {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -129,6 +135,17 @@ tr:nth-child(odd) {background-color: #fff;}
 }
 
 @media (min-width: 600px) {
+        h1 {
+        font-size: 60px;
+        font-weight: 900;
+        color: var(--color);
+        text-align: center;
+        z-index: 2;
+        background-color: rgba(247, 249, 255, 0.3); 
+        padding: 0 15px;       
+        border-radius: 10px;
+    }
+
     .hero {
         height: 50vh;
         width: 100%;
@@ -136,7 +153,7 @@ tr:nth-child(odd) {background-color: #fff;}
         justify-content: center;
         align-items: center;
         position: relative;
-        margin-top: 80px;
+        margin-top: 0px;
     }
     
     .hero-video {
@@ -157,9 +174,18 @@ tr:nth-child(odd) {background-color: #fff;}
         border-radius: 10px;
     }
     
+    /*changing form width for this screensize*/
+    form {
+        width: 55%;
+    }
+
 }
 
 @media (min-width: 992px) {
+    h1 {
+        font-size: 60px;
+    }
+
     .hero-text {
         font-size: 100px;    
     }
@@ -174,9 +200,15 @@ tr:nth-child(odd) {background-color: #fff;}
 
     .column {
         width: 33%;
+        text-align: left;
     }
 
     .column + .column {
         margin-left: 50px;
+    }
+
+    /*changing form width for this screensize*/
+    form {
+        width: 25%;
     }
 }
