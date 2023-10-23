@@ -48,7 +48,7 @@ a {
 
 .container {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -101,7 +101,7 @@ tr:nth-child(odd) {background-color: #fff;}
         justify-content: center;
         align-items: center;
         position: relative;
-        margin-top: 80px;
+        margin-top: 0px;
     }
     
     .hero-video {
