@@ -1,35 +1,48 @@
 footer {
-    background-color: #3586ff;
-    max-width: 1000px;
-    color:#434656;
-    padding: 20px;
+    background-color: #3586ffd4;
+    color:#34374a;
+    padding: 30px;
     font-family: 'Poppins', sans-serif;
-   height: 500px;
-   display: flex;
-   flex-direction:column;
-   float: left;
+    float: left;
+    width: 100%;
   }
+ 
+
+/* h4 for the <footer>*/
+.h4-footer {
+    text-align: center;
+}
 
 .telephon, .mail {
-    color:#434656;
+    color:#34374a;
 text-decoration: none;
-font-weight: 550;}
+font-weight: 550;
+display: flex;
+flex-direction: column;
+
+}
 
 .telephon:hover, .mail:hover {
     color: rgb(24, 30, 36);  
+    
 }
 
-.footer-aside-icons {
+.footer-section-icons {
     margin-top: 15px;
     justify-content: center;
-    gap: 5px;}
+    gap: 5px;
+    margin-left: 40px;
 
-.footer-aside-icons img {
+}
+
+
+
+.footer-section-icons img {
     width: 35px;
     transition: 0.4s; 
 }
 
-.footer-aside-icons img:hover {
+.footer-section-icons img:hover {
     transform: scale(1.2);
 }
 
@@ -38,10 +51,21 @@ font-weight: 550;}
     display: flex;
     flex-direction: row;
     height: fit-content;
+    width: fit-content;
  }
 
- aside {
+ section {
     margin: 15px; 
+   
+ }
+
+ .footer-section-icons {
+    display: inline-block;
+
+ } 
+
+ .footer-section-icons img {
+    width: 20px;
  }
 }
 
@@ -53,16 +77,17 @@ font-weight: 550;}
         line-height: 0.8;
      }
     
-     aside {
+     section {
         margin: 15px;
-        
      }
 
-     h4 {
+     /* h4 for the <footer>*/
+     .h4-footer {
         text-align: center;
      }
 
-     .footer-aside-Adress {
+     .footer-section-Adress {
         line-height: 0.8;
      }
+    
 }
