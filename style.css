@@ -1,16 +1,27 @@
 footer {
     background-color: #3586ffd4;
-    color:#34374a;
-    padding: 30px;
+    color: #34374a;
+    padding: 20px;
     font-family: 'Poppins', sans-serif;
-    float: left;
-    width: 100%;
-  }
- 
-
-/* h4 for the <footer>*/
-.h4-footer {
     text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+
+.footer-icons img {
+    width: 35px;
+    transition: 0.4s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
 }
 
 .telephon, .mail {
@@ -24,70 +35,34 @@ flex-direction: column;
 
 .telephon:hover, .mail:hover {
     color: rgb(24, 30, 36);  
-    
-}
-
-.footer-section-icons {
-    margin-top: 15px;
-    justify-content: center;
-    gap: 5px;
-    margin-left: 40px;
 
 }
 
-
-
-.footer-section-icons img {
-    width: 35px;
-    transition: 0.4s; 
-}
-
-.footer-section-icons img:hover {
-    transform: scale(1.2);
-}
-
-@media screen and (min-width:600px) {
- footer {
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-    width: fit-content;
- }
-
- section {
-    margin: 15px; 
-   
- }
-
- .footer-section-icons {
-    display: inline-block;
-
- } 
-
- .footer-section-icons img {
-    width: 20px;
- }
-}
-
-@media screen and (min-width:992px) {
+@media screen and (min-width: 600px) {
     footer {
         display: flex;
-        flex-direction: row;
-        height: fit-content;
-        line-height: 0.8;
-     }
-    
-     section {
-        margin: 15px;
-     }
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-     /* h4 for the <footer>*/
-     .h4-footer {
-        text-align: center;
-     }
+    .footer-section {
+        flex-basis: 33%;
+        margin: 0 15px;
+    }
 
-     .footer-section-Adress {
-        line-height: 0.8;
-     }
-    
+    .footer-section:last-child {
+        margin-right: 0;
+    }
 }
+
+@media screen and (min-width: 992px) {
+    footer {
+        line-height: 0.8;
+    }
+
+    .footer-section {
+        margin: 15px;
+        text-align: center;
+    }
+}
+
