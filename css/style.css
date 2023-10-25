@@ -35,8 +35,6 @@ Vi jobbar med nesting i CSS
 Vi använder främst px och %*/
 
 
-
-
 :root {
     --background: #F7F9FF;
     --background-footer: #3586ff;
@@ -49,6 +47,51 @@ Vi använder främst px och %*/
     margin: 0;
     padding: 0;
 }
+
+
+/*style for Header*/
+/---Style for nav-menu---/
+.topnav {
+    overflow: hidden;
+    background-color: var(--background-footer);
+    position: relative;
+}
+
+/---Hidden links under hamburger---/
+.topnav #myLinks {
+    display: none;
+    text-align: center;
+}
+
+/---Hover links---/
+.topnav #myLinks a:hover {
+    background-color: var(--background);
+    color: var(--background-footer);
+}
+
+/---Style for nav-links---/
+.topnav a {
+    color: var(--background);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.topnav .logo {
+    font-size: 20px;
+}
+
+/---Style for icon---/
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/here ends style for Header*/
+
 
 main {
     background-color: var(--background);
@@ -88,6 +131,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 
 .container {
     max-width: 1000px;
@@ -191,7 +235,7 @@ tr:nth-child(odd) {background-color: #fff;}
 
 
 
-/*style for KONTAKT sida*/
+/*style for KONTAKT side*/
 
 .h1-contact {
     text-align: center;
@@ -268,7 +312,7 @@ flex-direction: column;
     color: rgb(24, 30, 36);  
 }
 
-
+/*here ends style for KONTAKT side*/
 
 
 /*style for Footer*/
@@ -312,7 +356,7 @@ flex-direction: column;
     color: rgb(24, 30, 36);  
 
 }
-
+/*here ends style for Footer*/
 
 @media (min-width: 600px) {
         h1 {
@@ -367,9 +411,16 @@ flex-direction: column;
         width: 55%;
     }
 
+/*Header media queries (600px)*/
+  .topnav .logo{
+        font-size: 22px;
+    }
+    .topnav a{
+        font-size: 18px;
+    }
+ /*here ends Header media queries (600px)*/
 
-
- /*kontaktsida media queries (600)*/
+ /*kontakt side media queries (600)*/
  .contact-aside, .contact-aside2 {
         width: 50%;
      float: left;
@@ -415,7 +466,7 @@ flex-direction: column;
         color: rgb(24, 30, 36);  
     
     }
- 
+ /*here ends kontakt side media queries (600px)*/
 
  /*Footer media queries (600px)*/
      footer {
@@ -433,7 +484,7 @@ flex-direction: column;
     .footer-section:last-child {
         margin-right: 0;
     }
-
+/*here ends footer media queries (992px)*/
 }
 
 @media (min-width: 992px) {
@@ -471,9 +522,36 @@ flex-direction: column;
         width: 25%;
     }
  
+ /*Header media queries (992px)*/
+ .topnav a.icon{
+        display: none;
+    }
+    .topnav .logo{
+        font-size: 24px;
+    }
+    .topnav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .topnav a{
+        display: inline-block;
+        border-radius: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .topnav #myLinks{
+        display: block;
+    }
+
+ /*here ends Header media queries (992px)*/
 
 
- /*kontaktsida media queries (992px)*/
+ /*kontakt side media queries (992px)*/
 
  .contact-aside, .contact-aside2 {
         width: 50%;
@@ -501,7 +579,7 @@ flex-direction: column;
         color: rgb(24, 30, 36);  
     
     }
-
+/* here ends kontakt side media queries (992px)*/
 
  /*footer media queries (992px)*/
    footer {
@@ -513,6 +591,7 @@ flex-direction: column;
         text-align: center;
         line-height: 1.2;
     }
+ /*here ends footer media queries (992px)*/
 }
 
 
