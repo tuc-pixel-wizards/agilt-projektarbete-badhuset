@@ -1,3 +1,42 @@
+/*I footer ska det finnas:
+Adress
+Telefonnummer
+Mail
+Socialamedier
+Blå färg till footer:
+background: #3586ff;
+:root {
+--background: #F7F9FF;
+--background-footer: #3586ff;
+--color: #434656;
+}
+font-family: 'Poppins', sans-serif;
+ för containers så att inte innehållet blir för brett 
+max-width: 1000px;
+(Ikoner används genom Google fonts/icons)
+2 breakpoints:
+min-width: 600px
+min-width: 992px
+*/
+
+/*Kommun namn
+Grönviksdal
+CSS "regler"
+Vi använder oss av små bokstäver
+Vi använder oss av -bindestreck för mellanslag
+Klassnamn ska vara relevanta och självförklarande
+Vi börjar alltid filen med :root sedan följer * body/html, main header, h1-h6 p, därefter kommer klasserna/id, footer och sist i dokumentet ligger @media
+Vi ska alltid ha en tom rad mellan koden i CSSfilen
+Vi ska ha ett mellanrum mellan klassen och måsvingen
+Vi skriver klasser på engelska
+Vi skriver kommentarer för vad koden gör ovanför koden, vi skriver kommentarer på engelska
+Vi jobbar efter Mobile First (på badhuset för att sedan utvärdera för de andra sidorna)
+Vi jobbar med nesting i CSS
+Vi använder främst px och %*/
+
+
+
+
 :root {
     --background: #F7F9FF;
     --background-footer: #3586ff;
