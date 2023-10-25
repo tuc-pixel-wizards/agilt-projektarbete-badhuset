@@ -1,88 +1,302 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+/*I footer ska det finnas:
+Adress
+Telefonnummer
+Mail
+Socialamedier
+Blå färg till footer:
+background: #3586ff;
 :root {
-    --background: #F7F9FF;
-    --background-footer: #3586ffd4;
-    --color: #434656;
+--background: #F7F9FF;
+--background-footer: #3586ff;
+--color: #434656;
 }
 
-/*---Style for nav-menu---*/
-.topnav {
-    overflow: hidden;
-    background-color: var(--background-footer);
-    position: relative;
-}
+font-family: 'Poppins', sans-serif;
+ för containers så att inte innehållet blir för brett 
+max-width: 1000px;
 
-/*---Hidden links under hamburger---*/
-.topnav #myLinks {
-    display: none;
+(Ikoner används genom Google fonts/icons)
+
+2 breakpoints:
+min-width: 600px
+min-width: 992px
+
+*/
+
+/*Kommun namn
+Grönviksdal
+
+CSS "regler"
+
+Vi använder oss av små bokstäver
+Vi använder oss av -bindestreck för mellanslag
+Klassnamn ska vara relevanta och självförklarande
+Vi börjar alltid filen med :root sedan följer * body/html, main header, h1-h6 p, därefter kommer klasserna/id, footer och sist i dokumentet ligger @media
+Vi ska alltid ha en tom rad mellan koden i CSSfilen
+Vi ska ha ett mellanrum mellan klassen och måsvingen
+Vi skriver klasser på engelska
+Vi skriver kommentarer för vad koden gör ovanför koden, vi skriver kommentarer på engelska
+Vi jobbar efter Mobile First (på badhuset för att sedan utvärdera för de andra sidorna)
+Vi jobbar med nesting i CSS
+Vi använder främst px och %*/
+
+
+footer {
+    background-color: #3586ffd4;
+    color: #34374a;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
-/*---Hover links---*/
-.topnav #myLinks a:hover {
-    background-color: var(--background);
-    color: var(--background-footer);
+.footer-section {
+    margin-bottom: 25px;
 }
 
-/*---Style for nav-links---*/
-.topnav a {
-    color: var(--background);
-    padding: 14px 16px;
-    text-decoration: none;
+h2 {
     font-size: 15px;
-    display: block;
 }
 
-.topnav .logo {
-    font-size: 20px;
+
+.footer-icons img {
+    width: 35px;
+    transition: 0.4s;
 }
 
-/*---Style for icon---*/
-.topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+.telephon, .mail {
+    color:#34374a;
+text-decoration: none;
+font-weight: 550;
+display: flex;
+flex-direction: column;
+
+}
+
+.telephon:hover, .mail:hover {
+    color: rgb(24, 30, 36);  
+
 }
 
 @media screen and (min-width: 600px) {
-    .topnav .logo{
-        font-size: 22px;
-    }
-    .topnav a{
-        font-size: 18px;
-    }
-}
-@media screen and (min-width: 992px) {
-  
-    .topnav a.icon{
-        display: none;
-    }
-    .topnav .logo{
-        font-size: 24px;
-    }
-    .topnav{
+    footer {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        
+        justify-content:center;
+        margin-top: 100px;
+        
+        
     }
-    .topnav a{
-        display: inline-block;
-        border-radius: 50px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+
+
+
+    .footer-section {
+        flex-basis: 33%;
+        margin: 0 15px;
     }
-    .topnav #myLinks{
-        display: block;
+
+    .footer-section:last-child {
+        margin-right: 0;
     }
 }
+
+@media screen and (min-width: 992px) {
+    footer {
+        line-height: 0.8;
+    }
+
+    .footer-section {
+        margin: 15px;
+        text-align: center;
+    }
+}
+
+
+
+
+/*style for KONTAKT sida*/
+
+:root {
+    --background: #F7F9FF;
+
+    --color: #434656;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.h1-contact {
+    text-align: center;
+    color: var(--color);
+    padding: 35px 0;
+    font-size: 20px;
+}
+
+.contact-img{
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    border-style: ridge;
+   border-width: thick;
+}
+
+.contact-aside{
+    background-color: antiquewhite;
+   
+    border-style: ridge;
+    border-width: medium;
+    width: 75%;
+    margin: 20px auto;
+    
+    padding:10px;
+    
+    font-size: 11px;
+    text-align: center;
+  
+   
+}
+
+.contact-aside2{
+   
+margin-top: 10px;
+}
+
+
+.contact-aside, .contact-aside2 {
+    background-color: antiquewhite;
+    border-style: ridge;
+    border-width: medium;
+    width: 75%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.aside-icons {
+    width: 150px;
+   display: block;
+   margin: 0 auto;
+ }   
+
+
+
+.h4-contact {
+    font-size: 12px;
+    font-weight: bold;
+    color: #434656;
+}
+
+.p-contact {
+    font-weight: 600;
+    color: #434656;
+}
+
+.telephon, .mail {
+    color:#434656;
+text-decoration: none;
+font-weight: 550;
+display: flex;
+flex-direction: column;
+
+}
+
+.telephon:hover, .mail:hover {
+    color: rgb(24, 30, 36);  
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .contact-aside, .contact-aside2 {
+        width: 50%;
+     float: left;
+       margin: 10px;
+       position: relative;
+       left: 60px;
+        
+    }
+
+    .contact-img{
+        width: 700px;
+    }
+
+    .aside-icons {
+        width: 200px;
+        margin-bottom: 60px;
+    }
+
+    .h4-contact {
+        font-size: 20px;
+    }
+
+    .p-contact{
+        font-size: 15px;
+    }
+
+    
+    .contact-aside2, .aside-icons{
+        display: flex;
+        flex-direction: column
+    }
+
+    .telephon, .mail {
+        color:#34374a;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    .telephon:hover, .mail:hover {
+        color: rgb(24, 30, 36);  
+    
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .contact-aside, .contact-aside2 {
+        width: 50%;
+    }
+
+    .aside-icons {
+        width: 250px;
+    }
+
+    .h4-contact {
+        font-size: 20px;
+    }
+
+    .telephon, .mail {
+        font-size: 20px;
+        color:#34374a;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    .telephon:hover, .mail:hover {
+        color: rgb(24, 30, 36);  
+    
+    }
+
+    .footer-section{
+        line-height: 1.2;
+    }
+
+}
+
