@@ -240,3 +240,268 @@ tr:nth-child(odd) {background-color: #fff;}
         width: 25%;
     }
 }
+
+
+
+
+
+
+
+
+
+/*style for KONTAKT sida*/
+
+:root {
+    --background: #F7F9FF;
+
+    --color: #434656;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.h1-contact {
+    text-align: center;
+    color: var(--color);
+    padding: 35px 0;
+    font-size: 20px;
+}
+
+.contact-img{
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    border-style: ridge;
+   border-width: thick;
+}
+
+.contact-aside{
+    background-color: antiquewhite;
+   
+    border-style: ridge;
+    border-width: medium;
+    width: 75%;
+    margin: 20px auto;
+    
+    padding:10px;
+    
+    font-size: 11px;
+    text-align: center;
+  
+   
+}
+
+.contact-aside2{
+   
+margin-top: 10px;
+}
+
+
+.contact-aside, .contact-aside2 {
+    background-color: antiquewhite;
+    border-style: ridge;
+    border-width: medium;
+    width: 75%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.aside-icons {
+    width: 150px;
+   display: block;
+   margin: 0 auto;
+ }   
+
+
+
+.h4-contact {
+    font-size: 12px;
+    font-weight: bold;
+    color: #434656;
+}
+
+.p-contact {
+    font-weight: 600;
+    color: #434656;
+}
+
+.telephon, .mail {
+    color:#434656;
+text-decoration: none;
+font-weight: 550;
+display: flex;
+flex-direction: column;
+
+}
+
+.telephon:hover, .mail:hover {
+    color: rgb(24, 30, 36);  
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .contact-aside, .contact-aside2 {
+        width: 50%;
+     float: left;
+       margin: 10px;
+       position: relative;
+       left: 60px;
+        
+    }
+
+    .contact-img{
+        width: 700px;
+    }
+
+    .aside-icons {
+        width: 200px;
+        margin-bottom: 60px;
+    }
+
+    .h4-contact {
+        font-size: 20px;
+    }
+
+    .p-contact{
+        font-size: 15px;
+    }
+
+    
+    .contact-aside2, .aside-icons{
+        display: flex;
+        flex-direction: column
+    }
+
+    .telephon, .mail {
+        color:#34374a;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    .telephon:hover, .mail:hover {
+        color: rgb(24, 30, 36);  
+    
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .contact-aside, .contact-aside2 {
+        width: 50%;
+    }
+
+    .aside-icons {
+        width: 250px;
+    }
+
+    .h4-contact {
+        font-size: 20px;
+    }
+
+    .telephon, .mail {
+        font-size: 20px;
+        color:#34374a;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+    .telephon:hover, .mail:hover {
+        color: rgb(24, 30, 36);  
+    
+    }
+  
+}
+
+
+
+/*style for Footer*/
+
+footer {
+    background-color: #3586ffd4;
+    color: #34374a;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+
+.footer-icons img {
+    width: 35px;
+    transition: 0.4s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+.telephon, .mail {
+    color:#34374a;
+text-decoration: none;
+font-weight: 550;
+display: flex;
+flex-direction: column;
+
+}
+
+.telephon:hover, .mail:hover {
+    color: rgb(24, 30, 36);  
+
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        display: flex;
+        
+        justify-content:center;
+        margin-top: 100px;
+        
+        
+    }
+
+
+
+    .footer-section {
+        flex-basis: 33%;
+        margin: 0 15px;
+    }
+
+    .footer-section:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    footer {
+        line-height: 0.8;
+    }
+
+    .footer-section {
+        margin: 15px;
+        text-align: center;
+        line-height: 1.2;
+    }
+    }
