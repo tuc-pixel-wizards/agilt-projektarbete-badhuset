@@ -235,16 +235,16 @@ tr:nth-child(odd) {background-color: #fff;}
     color: #434656;
 }
 
-.telephon, .mail {
-    color: var(--background);
-    text-decoration: none;
-    font-weight: 550;
+.contact-telephon, .contact-mail {
+    color:#434656;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
 }
 
-.telephon:hover, .mail:hover {
+.contact-telephon:hover, .contact-mail:hover {
     color: rgb(24, 30, 36);  
+
 }
 
 /*style for Footer*/
