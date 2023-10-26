@@ -11,6 +11,32 @@
     padding: 0;
 }
 
+main {
+    background-color: var(--background);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color);
+    padding: 35px 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--color);
+    padding: 35px 0;
+}
+
+h6, p, .link {
+    font-size: 16px;
+    color: var(--color);
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
 /*style for Header*/
 .topnav {
     overflow: hidden;
@@ -47,32 +73,7 @@
     top: 0;
 }
 
-main {
-    background-color: var(--background);
-}
-
-h1 {
-    text-align: center;
-    color: var(--color);
-    padding: 35px 0;
-}
-
-h2 {
-    text-align: center;
-    color: var(--color);
-    padding: 35px 0;
-}
-
-p, .link {
-    font-size: 16px;
-    color: var(--color);
-    padding: 15px 0;
-}
-
-a {
-    text-decoration: none;
-}
-
+/*style for hero*/
 .hero-video {
     display: none;
 }
@@ -86,18 +87,49 @@ a {
     flex-direction: column;
 }
 
-
+/*style for general content*/
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
 }
 
+/*style for SLS*/
+.section-sls {
+    border-style: ridge;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.section-sls h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.section-sls h1 {
+    font-size: 24px;
+}
+
+.section-sls p {
+    font-style: oblique;
+    text-align: left;
+}
+
+/*style the indexpage*/
 .index-page-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin: 50px auto 0;
+}
+
+.padding-list {
+    padding: 0;
 }
 
 hr.line-break {
@@ -187,14 +219,7 @@ tr:nth-child(odd) {background-color: #fff;}
     overflow-x: auto;
 }
 
-
-
 /*style for KONTAKT side*/
-
-.h1-contact {
-    padding: 35px 0;
-}
-
 .contact-img {
     width: 85%;
     margin: 0 auto;
@@ -248,10 +273,8 @@ tr:nth-child(odd) {background-color: #fff;}
 }
 
 /*style for Footer*/
-
 footer {
     background-color: var(--background-footer);
-    color: var(--background);
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -299,7 +322,6 @@ footer h2 {
         text-align: center;
         z-index: 2;
         background-color: rgba(247, 249, 255, 0.3); 
-        padding: 0 15px;       
         border-radius: 10px;
     }
 
@@ -344,16 +366,16 @@ footer h2 {
         width: 55%;
     }
 
-/*Header media queries (600px)*/
-  .topnav .logo{
+    /*Header media queries (600px)*/
+    .topnav .logo{
         font-size: 22px;
     }
     .topnav a{
         font-size: 18px;
     }
 
- /*kontakt side media queries (600)*/
- .contact-aside, .contact-aside2 {
+    /*kontakt side media queries (600)*/
+    .contact-aside, .contact-aside2 {
         width: 50%;
         margin: 10px;
         left: 60px;
@@ -388,7 +410,7 @@ footer h2 {
     }
 
  /*Footer media queries (600px)*/
-     footer {
+    footer {
         display: flex;
         justify-content:center;
     }
@@ -412,8 +434,12 @@ footer h2 {
         font-size: 100px;    
     }
 
-    p, .link {
+    p, .link, h6 {
         font-size: 20px;
+    }
+
+    .link:hover {
+        text-decoration: underline;
     }
 
     .flex {
@@ -443,14 +469,16 @@ footer h2 {
         width: 25%;
     }
  
- /*Header media queries (992px)*/
- .topnav a.icon{
+    /*Header media queries (992px)*/
+    .topnav a.icon {
         display: none;
     }
-    .topnav .logo{
+
+    .topnav .logo {
         font-size: 24px;
     }
-    .topnav{
+
+    .topnav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -459,19 +487,18 @@ footer h2 {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .topnav a{
+    .topnav a {
         display: inline-block;
         border-radius: 50px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .topnav #myLinks{
+    .topnav #myLinks {
         display: block;
     }
-    
- /*kontakt side media queries (992px)*/
 
- .contact-aside, .contact-aside2 {
+    /*kontakt side media queries (992px)*/
+    .contact-aside, .contact-aside2 {
         width: 500px;
     }
 
@@ -489,15 +516,13 @@ footer h2 {
         font-weight: bold;
         display: flex;
         flex-direction: column;
-    
     }
     
     .telephon:hover, .mail:hover {
-        color: rgb(24, 30, 36);  
-    
+        color: rgb(24, 30, 36);
     }
 
- /*footer media queries (992px)*/
+    /*footer media queries (992px)*/
    footer {
         line-height: 0.8;
     }
@@ -507,36 +532,4 @@ footer h2 {
         text-align: center;
         line-height: 1.2;
     }
- /*here ends footer media queries (992px)*/
 }
-
-
-
-
-/*style for SLS*/
-
-
-.section-sls {
-    border-style: ridge;
-    background-color: antiquewhite;
-    text-align: center;
-    padding: 20px;
-    max-width: 600px;
-}
-
-.section-sls h2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-}
-
-.section-sls h1 {
-    font-size: 24px;
-}
-
-.section-sls p {
-    font-style: oblique;
-    text-align: left;
-}
-/*here ends style for SLS*/
