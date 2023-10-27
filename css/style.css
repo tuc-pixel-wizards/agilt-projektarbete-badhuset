@@ -221,7 +221,7 @@ tr:nth-child(odd) {background-color: #fff;}
 
 /*style for KONTAKT side*/
 .contact-img {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     display: block;
     border-style: ridge;
@@ -236,7 +236,7 @@ tr:nth-child(odd) {background-color: #fff;}
     background-color: antiquewhite;
     border-style: ridge;
     border-width: medium;
-    width: 75%;
+    width: 95%;
     margin: 20px auto;
     padding: 10px;
     font-size: 11px;
@@ -385,7 +385,7 @@ transition: 0.5s;
     }
 
     .contact-img {
-        width: 700px;
+        width: 90%;
     }
 
     .aside-icons {
