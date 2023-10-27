@@ -132,9 +132,8 @@ a {
     padding: 0;
 }
 
-hr.line-break {
-    border-top: 2px solid var(--color);
-    margin: 15px 0;
+.border {
+    border-bottom: var(--color) solid 3px;
 }
 
 /*section for bookingform*/
