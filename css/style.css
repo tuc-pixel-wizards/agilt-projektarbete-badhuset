@@ -306,7 +306,7 @@ footer h2 {
 }
 
 .telephon, .mail {
-    color:var(--background);
+    color:#F7F9FF;
     text-decoration: none;
     font-weight: 550;
     display: flex;
