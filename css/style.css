@@ -294,11 +294,15 @@ footer h2 {
 
 .footer-icons img {
     width: 35px;
-    transition: 0.4s;
+    
 }
 
-.social-media img:hover {
+.footer-icons img:hover {
     transform: scale(1.2);
+      color: #ffffff;  
+    transition: 0.5s;
+    width: 35.5px;
+}
 }
 
 .telephon, .mail {
@@ -310,8 +314,8 @@ footer h2 {
 }
 
 .telephon:hover, .mail:hover {
-    color: rgb(24, 30, 36);  
-
+    color: #ffffff;  
+transition: 0.5s;
 }
 
 @media (min-width: 600px) {
@@ -397,17 +401,7 @@ footer h2 {
         font-size: 15px;
     }
 
-    .telephon, .mail {
-        text-decoration: none;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .telephon:hover, .mail:hover {
-        color: rgb(24, 30, 36);  
-    
-    }
+
 
  /*Footer media queries (600px)*/
     footer {
@@ -510,17 +504,6 @@ footer h2 {
         font-size: 20px;
     }
 
-    .telephon, .mail {
-        font-size: 20px;
-        text-decoration: none;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .telephon:hover, .mail:hover {
-        color: rgb(24, 30, 36);
-    }
 
     /*footer media queries (992px)*/
    footer {
