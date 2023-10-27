@@ -303,10 +303,9 @@ footer h2 {
     transition: 0.5s;
     width: 35.5px;
 }
-}
 
 .telephon, .mail {
-    color:#F7F9FF;
+    color:var(--background);
     text-decoration: none;
     font-weight: 550;
     display: flex;
