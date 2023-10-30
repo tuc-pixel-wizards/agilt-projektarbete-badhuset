@@ -227,11 +227,11 @@ tr:nth-child(odd) {background-color: #fff;}
    border-width: thick;
 }
 
-.contact-aside2 {
+.contact-article2 {
     margin-top: 10px;
 }
 
-.contact-aside, .contact-aside2 {
+.contact-article, .contact-article2 {
     background-color: antiquewhite;
     border-style: ridge;
     border-width: medium;
@@ -241,12 +241,7 @@ tr:nth-child(odd) {background-color: #fff;}
     font-size: 11px;
     text-align: center;
 }
-
-.aside-icons {
-    width: 150px;
-   display: block;
-   margin: 0 auto;
- }   
+  
 
 .h4-contact {
     font-size: 12px;
@@ -269,6 +264,13 @@ tr:nth-child(odd) {background-color: #fff;}
 .contact-telephon:hover, .contact-mail:hover {
     color: rgb(24, 30, 36);  
 
+}
+
+.contact-article, .contact-article2, iframe {
+    width: 95%;
+    margin: 20px auto;
+    font-size: 11px;
+    text-align: center;
 }
 
 /*style for Footer*/
@@ -377,19 +379,16 @@ transition: 0.5s;
     }
 
     /*kontakt side media queries (600)*/
-    .contact-aside, .contact-aside2 {
-        width: 50%;
-        margin: 10px;
-        left: 60px;
-    }
+  
 
     .contact-img {
         width: 90%;
     }
 
-    .aside-icons {
-        width: 200px;
+    .contact-article {
+        width: 90%;
     }
+
 
     .h4-contact {
         font-size: 20px;
@@ -399,7 +398,12 @@ transition: 0.5s;
         font-size: 15px;
     }
 
-
+   .contact-article2, iframe {
+        width: 50%;
+        margin: 20px auto;
+        font-size: 11px;
+        text-align: center;
+    }
 
  /*Footer media queries (600px)*/
     footer {
@@ -490,19 +494,21 @@ transition: 0.5s;
     }
 
     /*kontakt side media queries (992px)*/
-    .contact-aside, .contact-aside2 {
+    .contact-article, .contact-article2 {
         width: 500px;
-    }
-
-    .aside-icons {
-        width: 250px;
     }
 
     .h4-contact {
         font-size: 20px;
     }
 
-
+    iframe {
+        margin: 20px auto;
+        font-size: 11px;
+        text-align: center;
+        margin: 10px;
+    }
+    
     /*footer media queries (992px)*/
    footer {
         line-height: 0.8;
