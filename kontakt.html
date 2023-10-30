@@ -37,20 +37,42 @@
        
        <div class="flex flex-contact">
          <div>
-           <aside class="contact-aside">
+           <article class="contact-article">
             <p class="p-contact">Telefonnummer: <a href="#" target="_blank" class="contact-telephon">0707-12 34 45</a></p>
-            <p class="p-contact">Mejl: <a href="https://www.microsoft.com/en-ww/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank" class="contact-mail">
+            <p class="p-contact">Mejl:
+                <a href="https://www.microsoft.com/en-ww/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank" 
+                    class="contact-mail">
               info@gronviksdalsbadhus.se</a></p>
-           </aside>
-            <aside class="contact-aside2">
+           </article>
+            <article class="contact-article2">
               <h4 class="h4-contact">Hitta hit</h4>
               <p class="p-contact">Adress:</p>
               <p>Vågvägen 7<br> 12354 Grönviksdal</p>
-           </aside>
+           </article>
           </div>
-         <a href="https://maps.google.com/" target="_blank">
-            <img class="aside-icons" src="img/map2.png" alt="map">
-          </a>
+           
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16132749.0706938!2d-3.301987123550293!3d60.42326142719534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb2396d35f0f1%3A0x22b8eba28dad6f62!2sSweden!5e0!3m2!1sen!2sse!4v1698397094757!5m2!1sen!2sse"  width="300px" border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+            <p class="demo"></p>
+            
+            <script>
+                    const x = document.getElementById("demo");
+    
+                  function Geolocation() {
+                    if (navigator.geolocation) {
+                      navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                      x.innerHTML = "Geolocation is not supported by this brower.";
+                    }
+                    }
+                    function showPosition(position) {
+                      x.innerHTML = "Latitude:" + position.coords.latitude + 
+                      "<br>Longitude:" + position.coords.longitude;
+                      
+                    }
+                  
+            </script>
+          
         </div>
     </main>
 
