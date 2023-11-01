@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --background: #F7F9FF;
     --background-footer: #3586ff;
@@ -19,6 +21,7 @@ h1 {
     text-align: center;
     color: var(--color);
     padding: 35px 0;
+    font-size: 30px;
 }
 
 h2 {
@@ -221,17 +224,18 @@ tr:nth-child(odd) {background-color: #fff;}
 /*style for KONTAKT side*/
 .contact-img {
     width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     display: block;
     border-style: ridge;
    border-width: thick;
 }
 
-.contact-aside2 {
+.contact-article2 {
     margin-top: 10px;
 }
 
-.contact-aside, .contact-aside2 {
+.contact-article, .contact-article2 {
     background-color: antiquewhite;
     border-style: ridge;
     border-width: medium;
@@ -241,12 +245,7 @@ tr:nth-child(odd) {background-color: #fff;}
     font-size: 11px;
     text-align: center;
 }
-
-.aside-icons {
-    width: 150px;
-   display: block;
-   margin: 0 auto;
- }   
+  
 
 .h4-contact {
     font-size: 12px;
@@ -271,6 +270,13 @@ tr:nth-child(odd) {background-color: #fff;}
 
 }
 
+.contact-article, .contact-article2, iframe {
+    width: 95%;
+    margin: 20px auto;
+    font-size: 11px;
+    text-align: center;
+}
+
 /*style for Footer*/
 footer {
     background-color: var(--background-footer);
@@ -287,7 +293,7 @@ footer {
 }
 
 footer h2 {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--background);
 }
 
@@ -377,19 +383,16 @@ transition: 0.5s;
     }
 
     /*kontakt side media queries (600)*/
-    .contact-aside, .contact-aside2 {
-        width: 50%;
-        margin: 10px;
-        left: 60px;
-    }
+  
 
     .contact-img {
         width: 90%;
     }
 
-    .aside-icons {
-        width: 200px;
+    .contact-article {
+        width: 50%;
     }
+
 
     .h4-contact {
         font-size: 20px;
@@ -399,7 +402,12 @@ transition: 0.5s;
         font-size: 15px;
     }
 
-
+   .contact-article2, iframe {
+        width: 50%;
+        margin: 20px auto;
+        font-size: 11px;
+        text-align: center;
+    }
 
  /*Footer media queries (600px)*/
     footer {
@@ -440,7 +448,6 @@ transition: 0.5s;
 
     .flex-contact {
         justify-content: space-evenly;
-        padding: 40px;
     }
 
     .column {
@@ -490,19 +497,22 @@ transition: 0.5s;
     }
 
     /*kontakt side media queries (992px)*/
-    .contact-aside, .contact-aside2 {
+    .contact-article, .contact-article2 {
         width: 500px;
-    }
-
-    .aside-icons {
-        width: 250px;
+        margin: 20px 20px 20px 0;
     }
 
     .h4-contact {
         font-size: 20px;
     }
 
-
+    iframe {
+        margin: 20px auto;
+        font-size: 11px;
+        text-align: center;
+        margin: 10px;
+    }
+    
     /*footer media queries (992px)*/
    footer {
         line-height: 0.8;
