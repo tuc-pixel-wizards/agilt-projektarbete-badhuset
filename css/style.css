@@ -224,6 +224,7 @@ tr:nth-child(odd) {background-color: #fff;}
 /*style for KONTAKT side*/
 .contact-img {
     width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     display: block;
     border-style: ridge;
@@ -292,7 +293,7 @@ footer {
 }
 
 footer h2 {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--background);
 }
 
@@ -389,7 +390,7 @@ transition: 0.5s;
     }
 
     .contact-article {
-        width: 90%;
+        width: 50%;
     }
 
 
@@ -447,7 +448,6 @@ transition: 0.5s;
 
     .flex-contact {
         justify-content: space-evenly;
-        padding: 40px;
     }
 
     .column {
@@ -499,6 +499,7 @@ transition: 0.5s;
     /*kontakt side media queries (992px)*/
     .contact-article, .contact-article2 {
         width: 500px;
+        margin: 20px 20px 20px 0;
     }
 
     .h4-contact {
